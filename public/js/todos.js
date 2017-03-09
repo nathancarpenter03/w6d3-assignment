@@ -22,7 +22,7 @@ function getTodos() {
 }
 
 function showTodo(todo) {
-    var todoItem = `<li class="list-group-item">${todo.todo}<span class="label label-info">${todo.category}</span><span class="label label-warning">${todo.due_date}</span></li>`;
+    var todoItem = `<li class="list-group-item"><input type="checkbox" value=""><span class ="todo-margin">${todo.todo}</span><span class="label label-info">${todo.category}</span><span class="label label-warning">${todo.due_date}</span></li>`;
     document.querySelector('.list-group').innerHTML += todoItem;
 }
 
